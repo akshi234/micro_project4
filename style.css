@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+body {
+    background: #3B4664;
+}
+
+.calculator {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#display {
+    width: 50vh;
+    height: 15vh;
+    background-color: #181F32;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-right: 25px;
+    box-shadow: 5px 5px 8px #000;
+
+}
+
+.keypad {
+    display: flex;
+    background-color: #252D44;
+    width: 50vh;
+    height: 60vh;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 8px #000;
+
+}
+
+.btn {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+button {
+    width: 7vh;
+    height: 4vh;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px #000;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+button:hover {
+    scale: 1.1;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-keydel {
+    color: white;
+    background-color: #647299;
+    font-weight: 500;
+
+}
+
+.rst,
+.eql {
+    width: 18vh;
+    height: 4vh;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    background: #647299;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    box-shadow: 5px 5px 8px #000;
+}
+
+.eql {
+    background-color: red;
+}
+
+@media screen and (max-width: 360px) {
+    .display {
+        width: 40vh;
+        height: 10vh;
+        background-color: #181F32;
+        border-radius: 10px;
+    }
+
+    .keypad {
+        display: flex;
+        background-color: #252D44;
+        width: 40vh;
+        height: 50vh;
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    button:hover {
+        scale: 1.1;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .display {
+        width: 40vh;
+        height: 10vh;
+        background-color: #181F32;
+        border-radius: 10px;
+    }
+
+    .keypad {
+        display: flex;
+        background-color: #252D44;
+        width: 40vh;
+        height: 50vh;
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    button:hover {
+        scale: 1.1;
+        transition: all 0.5s ease-in-out;
+    }
+}
